@@ -1,0 +1,15 @@
+//自动生成，不要手动修改
+//this script is auto generated,do not do any modification
+
+import { $3$ } from 'cc';
+import { UICompUtil } from 'db://assets/MainPack/Frame/Core/Utils/UICompUtil';
+import { UI_ItemBase, UI_ItemBaseInitParam } from 'db://assets/MainPack/Frame/Core/UI_Comp/UI_ItemBase';
+export class Auto_$1$<T extends UI_ItemBaseInitParam> extends UI_ItemBase<T> {
+$2$
+
+    public init(param: T): void {
+$4$	
+
+        return super.init(param);
+    }
+}

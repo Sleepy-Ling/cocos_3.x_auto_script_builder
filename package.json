@@ -1,0 +1,99 @@
+{
+    "$schema": "./@types/schema/package/index.json",
+    "package_version": 2,
+    "name": "auto_script_builder",
+    "version": "1.0.0",
+    "author": "Cocos Creator",
+    "editor": ">=3.8.5",
+    "scripts": {
+        "preinstall": "node ./scripts/preinstall.js",
+        "build": "tsc && npm run copy-assets",
+        "watch": "tsc -w",
+        "copy-assets": "copyfiles -u 1 source/**/*.txt dist/"
+    },
+    "description": "i18n:auto_script_builder.description",
+    "main": "./dist/main.js",
+    "devDependencies": {
+        "@cocos/creator-types": "^3.8.5",
+        "@types/node": "^18.17.1",
+        "copyfiles": "^2.4.1",
+        "typescript": "^4.3.4"
+    },
+    "contributions": {
+        "menu": [
+            {
+                "path": "i18n:auto_script_builder",
+                "label": "i18n:auto_script_builder.show_log",
+                "message": "show-log"
+            }
+        ],
+        "messages": {
+            "scene:ready": {
+                "methods": [
+                    "onOpenScene"
+                ]
+            },
+            "show-log": {
+                "methods": [
+                    "showLog"
+                ]
+            },
+            "asset-db:asset-change": {
+                "methods": [
+                    "onSaveAsset"
+                ]
+            }
+        }
+    },
+    "dependencies": {
+        "ansi-regex": "^5.0.1",
+        "ansi-styles": "^4.3.0",
+        "balanced-match": "^1.0.2",
+        "brace-expansion": "^1.1.11",
+        "cliui": "^7.0.4",
+        "color-convert": "^2.0.1",
+        "color-name": "^1.1.4",
+        "concat-map": "^0.0.1",
+        "core-util-is": "^1.0.3",
+        "emoji-regex": "^8.0.0",
+        "escalade": "^3.2.0",
+        "fs.realpath": "^1.0.0",
+        "get-caller-file": "^2.0.5",
+        "glob": "^7.2.3",
+        "inflight": "^1.0.6",
+        "inherits": "^2.0.4",
+        "is-fullwidth-code-point": "^3.0.0",
+        "isarray": "^0.0.1",
+        "minimatch": "^3.1.2",
+        "mkdirp": "^1.0.4",
+        "noms": "^0.0.0",
+        "once": "^1.4.0",
+        "path-is-absolute": "^1.0.1",
+        "process-nextick-args": "^2.0.1",
+        "readable-stream": "^1.0.34",
+        "require-directory": "^2.1.1",
+        "safe-buffer": "^5.1.2",
+        "string-width": "^4.2.3",
+        "string_decoder": "^0.10.31",
+        "strip-ansi": "^6.0.1",
+        "through2": "^2.0.5",
+        "undici-types": "^5.26.5",
+        "untildify": "^4.0.0",
+        "util-deprecate": "^1.0.2",
+        "wrap-ansi": "^7.0.0",
+        "wrappy": "^1.0.2",
+        "xtend": "^4.0.2",
+        "y18n": "^5.0.8",
+        "yargs": "^16.2.0",
+        "yargs-parser": "^20.2.9"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Sleepy-Ling/cocos_3.x_auto_script_builder.git"
+    },
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Sleepy-Ling/cocos_3.x_auto_script_builder/issues"
+    },
+    "homepage": "https://github.com/Sleepy-Ling/cocos_3.x_auto_script_builder#readme"
+}

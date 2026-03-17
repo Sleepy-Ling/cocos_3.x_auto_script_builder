@@ -1,0 +1,11 @@
+import { $3$ } from 'cc';
+import { ViewBase, ViewParamBase } from 'db://assets/Frame/Core/View/ViewBase';
+export class Auto_$1$<T extends ViewParamBase> extends ViewBase<T> {
+$2$
+
+    public async firstInitView(param?: T): Promise<boolean> {
+
+        return super.firstInitView(param);
+    }
+
+}

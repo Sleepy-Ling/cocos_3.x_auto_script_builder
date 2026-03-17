@@ -1,0 +1,15 @@
+//自动生成，不要手动修改
+//this script is auto generated,do not do any modification
+
+import { $3$ } from 'cc';
+import { UICompUtil } from 'db://assets/MainPack/Frame/Core/Utils/UICompUtil';
+import { ViewBase, ViewParamBase } from 'db://assets/MainPack/Frame/Core/View/ViewBase';
+export class Auto_$1$<T extends ViewParamBase> extends ViewBase<T> {
+$2$
+
+    public firstInitView(param?: T): Promise<boolean> {
+$4$	
+
+        return super.firstInitView(param);
+    }
+}

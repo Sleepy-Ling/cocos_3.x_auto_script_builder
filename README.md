@@ -1,1 +1,12 @@
-# cocos_3.x_auto_script_builder
+# Project Title
+
+An blank extension.
+
+## Install
+
+```bash
+# Install dependent modules
+npm install
+# build
+npm run build
+```
